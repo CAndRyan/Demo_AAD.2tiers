@@ -30,7 +30,7 @@ namespace AAD._2tiers.Web.Controllers
             {
                 WebClient client = new WebClient();
                 client.Headers.Add(HttpRequestHeader.Authorization, $"Bearer {accessToken}");
-                ViewBag.Message = client.DownloadString("http://localhost:10000/api/Hello");
+                ViewBag.Message = client.DownloadString("https://localhost:44301/api/Hello");
             }
             catch (Exception ex)
             {
